@@ -5,25 +5,28 @@ import {Fragment} from 'react'
 
 function App() {
   return (
-    <Router>
-    <div className="App">
+  <Router>
+  
+    <div className="app">
     <Routes>
-      {PublicRouter.map((router,index)=>{
+    {PublicRouter.map((router,index)=>{
         const Page = router.component;
-        let Layout = DefaultLayout
+        let Layout = DefaultLayout;
         if(router.layout){
-          Layout = router.layout
+          Layout = router.Layout
         }
         else if(router.layout === null){
           Layout = Fragment
         }
-        return <Route key={index} path={router.path} 
-         element={
-        <Layout>
-            <Page />
-        </Layout>}/>
+  
+      return <Route key={index} path={router.path} 
+           element={
+          <Layout>
+              <Page />
+          </Layout>}/>
       })}
     </Routes>
+     
     </div>
   </Router>
   );

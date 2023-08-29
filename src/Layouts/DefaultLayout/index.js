@@ -5,6 +5,7 @@ import Footer from "./Footer"
 
 
 function DefaultLayout({children}) {
+
     return <>
         <Header/>
         <Container>

@@ -1,7 +1,7 @@
 const router= {
-    home: '',
+    home: '/',
     shop:'/shop',
-    detail:"/:",
+    detail:"/:detail:",
     feedback:"/feedback",
     shoppingCart:"/:shoppingCart",
     checkout:"/:checkout"
