@@ -1,0 +1,42 @@
+.cart{
+    &-like{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 24px;
+            right: -1.6rem;
+            top: .6rem;
+            background-color:#CCC;;
+        }
+    }
+    &-icon{
+        position: relative;
+        margin-right: 1.2rem;
+    }
+    &-quality{
+        position: absolute;
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 50%;
+        background-color: var(--green-primary-2);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 500;
+        top: -.2rem;
+    right: -0.2rem;
+    }
+    &-tt{
+        font-size: 11px;
+        color:#4D4D4D;
+        margin-bottom: .6rem;
+       }
+       &-price{
+        color: var(--black-primary);
+        font-weight: 500;
+      }
+}

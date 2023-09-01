@@ -1,0 +1,24 @@
+.search{
+    min-width: 40rem;
+    max-height: 4.5rem;
+   &-content{
+    min-width: 100%;
+    max-height: 100%;
+    padding: 12px 18px 12px 16px;;
+    border:.1rem solid var(--gray-primary);
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+   }
+   &-input{
+    border: none;
+    outline: none;
+    background-color: unset;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+   }
+   &-icon{
+    margin-right: .8rem;
+   }
+ 
+   
+}

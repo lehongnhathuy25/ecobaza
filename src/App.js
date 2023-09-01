@@ -6,7 +6,6 @@ import {Fragment} from 'react'
 function App() {
   return (
   <Router>
-  
     <div className="app">
     <Routes>
     {PublicRouter.map((router,index)=>{

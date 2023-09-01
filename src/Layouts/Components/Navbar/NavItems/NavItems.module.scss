@@ -1,0 +1,16 @@
+.navbar-list{
+    margin-right: 3.2rem;
+    &:hover .navbar-link{
+        color: white;
+        transition: all .2s;
+    }
+}
+.navbar-link{
+    color: var(--gray-primary);
+    font-weight: 500;
+    margin-right: .4rem;
+
+}
+.navbar-link.active{
+    color: white;
+}
