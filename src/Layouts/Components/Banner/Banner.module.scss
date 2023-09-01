@@ -5,15 +5,133 @@
             border-radius: .6rem;
             flex: 1;
             height: 100%;
+            position: relative;
            
             img{
                 width: 100%;
                 height: 100%;
                 border-radius: .6rem;
+                object-fit: cover;
             
+            }
+        }
+      
+        &-title{
+            position: absolute;
+            top:15.5rem;
+            left: 6rem;
+          
+        }
+        &-tt{
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 57.6px */
+            color: white;
+        }
+        &-ct{
+            margin: 2.8rem 0;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            color: white;
+            .sale-off{
+                padding: .4rem 1.2rem;
+                background-color: var( --orange-primary);
+                border-radius: .5rem;
+            }
+            .freeship{
+                font-size: 1.4rem;
+                color: white;
+                opacity: 0.8;
+                font-weight: 400;
+                margin-top: .8rem;
             }
         }
         .block-right{
             gap:2.4rem;
+            .banner-img.top{
+
+                .banner-title{
+                    top: 3.2rem;
+                    left: 3.2rem;
+                }
+                .banner-ct{
+                    color: var(--black-primary);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 100%; /* 14px */
+                    letter-spacing: 0.42px;
+                    text-transform: uppercase;
+                }
+                .sale-off{
+                   padding: 0rem;
+                   background-color: unset;
+                   font-size: 32px;
+                   font-style: normal;
+                   font-weight: 600;
+                   line-height: 120%; 
+                   margin-top: .8rem;
+                }
+                .freeship{
+                    color: #666666;
+                    text-transform: lowercase;
+                    font-size: 14px;
+                }
+                
+            }
+            .btn.btn-now {
+                background-color: unset !important;
+                border: none;
+                outline: none;
+                font-weight: 600;
+                color: var(--green-primary);
+                font-size: 16px;
+                cursor: pointer;
+              
+                &:hover{
+                    color: var(--orange-primary);
+                }
+                &:hover path{
+                    stroke: var(--orange-primary);
+                }
+            }
+            .banner-img.bottom{
+                .banner-title{
+                  top: 0;
+                  left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .banner-tt{
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-weight: 500;
+                    line-height: 100%; /* 14px */
+                    letter-spacing: 0.42px;
+                    text-transform: uppercase;
+
+                }
+                .banner-ct{
+                    text-align: center;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 120%; /* 38.4px */
+                    margin-top: 1.2rem;
+                    margin-bottom: 3.2rem;
+                    max-width: 34.3rem;
+                }
+            }
+            
+            
         }
+        
 }
+

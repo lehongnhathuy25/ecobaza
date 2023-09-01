@@ -1,0 +1,10 @@
+.option{
+    margin-top: 2.4rem;
+    padding: 4rem ;
+    box-shadow: 0px 8px 40px 0px rgba(0, 38, 3, 0.08);
+    &-list{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap:.5rem;
+    }
+}
