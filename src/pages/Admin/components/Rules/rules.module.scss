@@ -1,0 +1,17 @@
+.form-group{
+    .label{
+        display: block;
+       
+        font-weight: 700;
+    }
+    input{
+        margin: 1.6rem 0;
+        font-size: 1.6rem;
+        width: 70%;
+        padding: 1.6rem 0;
+        border: none;
+        outline: none;
+        background-color: unset;
+        border-bottom: .1rem solid var( --orange-primary);
+    }
+}

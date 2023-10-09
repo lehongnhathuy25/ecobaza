@@ -1,0 +1,20 @@
+.categories{
+    margin-top:6rem;
+    &-title{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; 
+    }
+}
+@media (max-width:690px){
+    .categories{
+        margin-top:6rem;
+        &-title{
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; 
+        }
+    }
+  }

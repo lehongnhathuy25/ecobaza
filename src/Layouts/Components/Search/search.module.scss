@@ -1,5 +1,5 @@
 .search{
-    min-width: 40rem;
+   min-width: 40rem;
     max-height: 4.5rem;
    &-content{
     min-width: 100%;
@@ -20,5 +20,23 @@
     margin-right: .8rem;
    }
  
+   
+}
+.search-modal{
+    display: none;
+}
+@media (max-width:1024px){
+    .search{
+        min-width: unset;
+        &-content{
+            min-width: unset;
+        }
+    }
+}
+
+@media (max-width:690px){
+    .search{
+        display: none !important;
+    }
    
 }

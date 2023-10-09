@@ -1,0 +1,116 @@
+.subcribe{
+    padding: 4rem 0;
+}
+.subcribe-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subcribe-title{
+    max-width: 44.8rem;
+}
+.subcribe-tt{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    color:var(--black-primary)
+}
+.subcribe-ct{
+    font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+color:#999;
+}
+.social{
+    display: flex;
+    align-items: center;
+    &-input{
+        min-width: 44.4rem;
+        
+       background-color: #fff;
+        display: flex;
+        align-items: center;
+        border:.1rem solid #E6E6E6;
+        border-radius: 46px;
+        margin-right: 8rem;
+        input{
+            width: 100%;
+            height: 100%;
+            background-color: unset;
+            border:none;
+            outline: none;
+            font-size: 1.6rem;
+            padding: 1.4rem 2.4rem;
+        }
+    }
+    &-network{
+        display: flex;
+        align-items: center;
+    }
+    button{
+        background-color: var(--green-primary);
+        color:white;
+        padding: 1.6rem 4rem;
+        border: none;
+        border-radius: 4.3rem;
+        font-weight: 600;
+    }
+   
+}
+.social-icon{
+    width: 4rem;
+    height: 4rem;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: .8rem;
+    transition: all .2s;
+    cursor: pointer;
+    &:hover{
+        background-color: var(--green-primary);
+    }
+    &:hover svg,
+    &:hover path{
+        fill: #fff;
+    }
+}
+@media(max-width:1024px){
+    .subcribe-container{
+        display: block;
+    }
+    .subcribe-title{
+        margin-bottom: 2.4rem;
+    }
+}
+@media(max-width:768px){
+    .social{
+        &-input{
+            min-width: unset;
+            input{
+               
+                padding: 1rem 1.6rem;
+            }
+        }    
+        button{
+           
+            padding: 1rem 1.6rem;
+            
+        }
+    }
+}
+@media (max-width:599px){
+    .social{
+        display: block;
+        &-input{
+            margin-right: 0;
+            margin-bottom: 1.2rem;
+        }
+    }
+    .subcribe-tt{
+        font-size: 1.8rem;
+    }
+}

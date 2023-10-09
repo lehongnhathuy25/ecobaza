@@ -1,0 +1,28 @@
+.action{
+    display: flex;
+}
+.btn{
+    width: 5.6rem;
+    height: 3.6rem;
+    border-radius: .8rem;
+    border:none;
+    outline: none;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+  .action{
+      display: flex;
+      width: 100%;
+      align-items: center;
+     justify-content: center;
+  }
+  a{
+      min-width: 2.8rem;
+     display: inline-block;
+     cursor: pointer;
+  }

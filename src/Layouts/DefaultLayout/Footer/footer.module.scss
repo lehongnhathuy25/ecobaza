@@ -1,0 +1,60 @@
+.footer {
+  background-color: var(--black-primary);
+  padding: 6.2rem 0rem 2.4rem 0rem;
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .1rem solid #999;
+    padding-bottom: 2.4rem;
+    flex-wrap: wrap;
+  }
+  &-logo {
+    width: 33.6rem;
+      margin: 1.6rem 0;
+  }
+ 
+  &-logo-title {
+    color: white;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px; /* 118.75% */
+    letter-spacing: -0.96px;
+    margin-left: .6rem;
+    display: inline-block;
+  }
+  &-ct{
+    margin: 1.6rem 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color:#808080;
+  }
+}
+.contact-number,
+.contact-email{
+    color:#fff
+}
+.or{
+    color:#808080;
+    margin: 0 1.6rem;
+}
+.footer-nav{
+    margin-bottom: 1.4rem;
+    margin-right: 1.4rem;
+    li{
+        margin-bottom: 1.6rem;
+    }
+    a{
+        color:#999;
+        &:hover{
+            color:#fff
+        }
+    }
+}
+.footer-bottom{
+  padding: 2.4rem 0;
+  color: white;
+  text-align: center;
+}

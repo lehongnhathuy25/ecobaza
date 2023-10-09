@@ -20,13 +20,16 @@ html {
     line-height: 1.6rem;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-  
+ 
 }
 body{
     font-size: 1.4rem;
     background-color: #f5f5f5;
+    box-sizing: border-box;
    
-   
+}
+.App{
+    overflow: hidden;
 }
 .container{
     width: 100%;
@@ -80,14 +83,27 @@ a{
 .mt-64{
     margin-top: 6.4rem;
 }
+.mt-16{
+    margin-top: 1.6rem;
+}
 .mt-24{
     margin-top: 2.4rem;
 }
+.mt-32{
+    margin-top: 3.2rem;
+}
+
 .mt-2{
     margin-top: .2rem;
 }
 .mt-128{
     margin-top: 12.8rem;
+}
+.mt-60{
+    margin-top: 6rem;
+}
+.mb-20{
+    margin-bottom: 2rem !important;
 }
 .mb-64{
     margin-bottom: 6.4rem;
@@ -186,6 +202,10 @@ a{
     width: 67.777%;
     max-width: 67.777%;
 }
+.col-8{
+    width: 83.333%;
+    max-width:  83.333%;
+}
 .w-100{
     width: 100%;
   
@@ -243,4 +263,129 @@ left: 0;
 .btn.btn-now:hover  path{
     transition: all .3s ease-in;
     stroke: #fff !important;
+}
+.text-center{
+    text-align: center;
+}
+.text-bold{
+    font-weight: 700;
+}
+table{
+    width: 100%;
+    thead{
+        width: 100%;
+        tr{
+         th{
+             padding: 1.6rem;
+         }
+        }
+     }
+     tbody{
+         tr{
+             td{
+                 padding: 1.6rem 2.4rem;
+                 text-align: center;
+                 img{
+                     width: 2.4rem;
+                     height: 2.4rem;
+                 }
+             }
+         }
+     }
+     
+}
+.url_image{
+    color: red;
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 2.4rem;
+    cursor: pointer;
+    
+}
+.message-icon{
+    margin-right: 1.6rem;
+    margin-top: .6rem;
+    svg{
+        fill: #00b207;
+    }
+}
+.error-message{
+    color: red;
+    margin-bottom: 1.2rem;
+    padding: 0 1.2rem;
+}
+.tippy-box.custom-tooltip-class{
+    background-color: white;
+}
+.custom-tooltip-class .tippy-content{
+    background-color: white;
+    width: 14rem;
+    height: 4.2rem;
+    border-radius: .8rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0;
+    div{
+        height: 100%;
+        a{
+            height: 100%;
+        }
+    }
+}
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    transition: all .4s;
+    &-overlay {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100vh;
+    }
+  }
+  @media(min-width:1201px){
+    .hidden-pc{
+        display: none;
+    }
+}
+@media(max-width:1200px){
+    .hidden-lg-tablet{
+        display: none;
+    }
+}
+@media(max-width:1024px){
+    .hidden-tablet{
+        display: none !important;
+    }
+}
+@media(max-width:691px){
+    .hidden-s-tablet{
+        display: none !important;
+    }
+}
+
+@media (max-width:690px){
+    .btn.btn-now{
+        padding: 1rem 2rem;
+    }
+    .hidden-mobile{
+        display: none !important;
+    }
+}
+
+@media (max-width:599px){
+    .container{
+       
+        padding: 0rem 1rem;
+    }
+    .btn.btn-now::after{
+        background-color: unset;
+
+    }
+    .btn.btn-now:hover > span{
+        color: unset;
+    }
 }

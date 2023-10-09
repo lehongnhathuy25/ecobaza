@@ -1,0 +1,29 @@
+.submit{
+    display: flex;
+    width: 100%;
+    align-items: center;
+  
+}
+.btn{
+    width: 5.6rem;
+    height: 3.6rem;
+    border-radius: .8rem;
+    border:none;
+    outline: none;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    &-add{
+        background-color: var( --green-primary);
+        margin-right: .8rem;
+       
+    }
+    &-exit{
+        background-color: red;
+       
+    }
+}

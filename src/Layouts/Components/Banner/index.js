@@ -3,6 +3,7 @@ import style from './Banner.module.scss'
 import Images from '~/assets/images'
 const cx = className.bind(style)
 function Banner({children}) {
+
     return (
         <div className={cx("banner",["d-flex",])}>
             <div className={cx("block-left",["col-6-x"])}>
@@ -17,7 +18,7 @@ function Banner({children}) {
                                 <p  className={cx("freeship")}>Free shipping on all your order.</p>
                             </div>
                           
-                            <button className={cx("btn btn-now",['d-flex','align-center',"justify-content-center"])}>
+                            <button className={cx("btn btn-now",['d-flex','align-center',"justify-content-center","btn-now-mobile"])}>
                                     <span className={cx("mr-16")}>Shop now</span>
                                     <span className={cx("mt-2")}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
@@ -29,7 +30,7 @@ function Banner({children}) {
                     </div>
                 </div>
             </div>
-            <div className={cx("block-right",["col-2-x","d-flex","flex-column","top"])}>
+            <div className={cx("block-right",["col-2-x","d-flex","flex-column","top","hidden-tablet"])}>
             <div className={cx("banner-img",["top"])}>
                     <img src={Images.Banner_2} alt=""/>
                     <div className={cx("banner-title")}>
@@ -71,4 +72,4 @@ function Banner({children}) {
     )
 }
 
-export default Banner;
+export default Banner ;

@@ -1,0 +1,25 @@
+.menu_dashboard{
+    margin-top: 5.6rem;
+    padding: 0 2.4rem;
+    li{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: start;
+         padding: 1rem;
+         border-radius: .6rem;
+        img{
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-right: 2.6rem;
+        }
+        &:hover a{
+          
+            color: #5D87FF !important;
+        }
+        &:hover{
+           
+            background-color: rgba(93,135,255,0.1);
+        }
+    }
+}

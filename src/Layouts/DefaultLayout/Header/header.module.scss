@@ -54,3 +54,20 @@
     margin-left: 1.1rem ;
     color: var(--white-primary);
 }
+@media (max-width:599px){
+   .header-logo{
+    img{
+        width: 15rem;
+    } 
+   }
+    
+}
+@media (max-width:350px){
+    .header-logo{
+     img{
+         width: 12rem;
+     } 
+    }
+     
+ }
+ 

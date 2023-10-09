@@ -1,5 +1,6 @@
+import  Container from '~/Layouts/DefaultLayout/Container'
 function Home() {
-    return <h1>this is home</h1>;
+    return (<Container />);
 }
 
 export default Home;

@@ -14,3 +14,11 @@
 .navbar-link.active{
     color: white;
 }
+.navbar-list.navbar-list-mobile{
+    margin-bottom: 3.6rem;
+    .navbar-link{
+       color: #0A5D31;
+       font-size: 1.8rem;
+       font-weight: 700;
+    }
+}

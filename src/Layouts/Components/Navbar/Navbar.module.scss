@@ -5,3 +5,23 @@
 .navbar{
     padding: 2rem 0rem;
 }
+
+
+@media(max-width:1200px){
+    .wraper{
+        padding: 1.2rem 0;
+        .menu-mobile {
+            cursor: pointer;
+            img{
+                width: 2.6rem;
+                height: 2.6rem;
+            }
+        }
+    }
+    .navbar-mobile{
+        height: 100%;
+        padding: 5.2rem 1.6rem;
+       
+    }
+    
+}
